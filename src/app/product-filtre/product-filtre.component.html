@@ -1,0 +1,27 @@
+<div class="container">
+    <form [formGroup]="filterForm">
+        <div class="columns">
+            <div class="column">
+                <label for="nameFilter">Par nom</label>
+                <input type="text" class="input" id="nameFilter" formControlName="nameFilter">
+            </div>
+            <div class="column">
+                <label>Par categorie</label>
+                <div class="select  is-fullwidth">
+                  <select formControlName="categoryFilter">
+                    <option>Aucune</option>
+                    <option>FPS</option>
+                    <option>TPS</option>
+                    <option>Aventure</option>
+                    <option>Enigme</option>
+                  </select>
+                </div>
+            </div>
+            <div class="column is-2">
+                <label for="nameFilter">Par Prix</label>
+                <input type="number" min="0" max="100" class="input"  formControlName="priceFilter">
+            </div>
+        </div>
+    </form>
+    <br>
+</div>
